@@ -1,0 +1,46 @@
+/* Media query cho màn hình có chiều rộng nhỏ hơn hoặc bằng 768px (màn hình di động) */
+@media (max-width: 767px) {
+  /* Utilities */
+  .row-line {
+    display: none;
+  }
+
+  /* Nav-bar */
+  #nav-bar .info {
+    display: none;
+  }
+
+  #nav-bar .container a,
+  #nav-bar .container .info {
+    border: none;
+  }
+
+  /* target */
+
+
+  /* Thông tin */
+  .project-item{
+    border: 1px solid #ddd;
+  }
+
+  .project-item .project-img {
+    max-width: 370px;
+    display: block;
+  }
+
+  .project-item .pi-body {
+    min-height: 300px;
+    max-width: 370px;
+    border: 1px solid #eee;
+    border-bottom: none;
+  }
+
+  /* =============================================================== More2 */
+
+  .main-parent,
+  .time-line{
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+
+}

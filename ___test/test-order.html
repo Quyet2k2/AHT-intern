@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Thêm CSS để làm cho giao diện dễ nhìn hơn */
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .job-info-item {
+      border: 1px solid #dee2e6;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+
+    .jii-heading {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .jii-content {
+      padding: 10px;
+    }
+
+    .hobbies-list li {
+      border: 1px solid #dee2e6;
+      background-color: #fff;
+      border-radius: 8px;
+      margin: 5px;
+      padding: 10px;
+    }
+
+    .lang-heading, .tech-heading {
+      background-color: #007bff;
+      color: #fff;
+      padding: 5px;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+
+    .level-skill-bar div {
+      height: 10px;
+      margin: 3px;
+      border-radius: 5px;
+    }
+
+    .level1 {
+      background-color: #28a745;
+    }
+
+    .level2 {
+      background-color: #ffc107;
+    }
+
+    .level3 {
+      background-color: #dc3545;
+    }
+  </style>
+  <title>Bootstrap Order Test</title>
+</head>
+<body>
+
+<section id="job-info" class="mt-5">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-lg-0 px-lg-0 mx-md-5 px-md-5">
+      <!-- Kinh nghiệm -->
+      <div class="col job-info-item-1 order-0 order-lg-1 order-md-1 pb-3">
+        <div class="job-info-item h-100">
+          <div class="jii-heading">
+            <h1>Kinh nghiệm</h1>
+            <i class="fa-solid fa-toolbox"></i>
+          </div>
+          <!-- Nội dung kinh nghiệm -->
+        </div>
+      </div>
+
+      <!-- Học vấn -->
+      <div class="col job-info-item-1 order-1 order-lg-2 order-md-4 pb-3">
+        <div class="job-info-item h-100">
+          <div class="jii-heading">
+            <h1>Học vấn</h1>
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+          <!-- Nội dung học vấn -->
+        </div>
+      </div>
+
+      <!-- Hoạt động -->
+      <div class="col job-info-item-1 order-2 order-lg-3 order-md-2 pb-3">
+        <div class="job-info-item h-100">
+          <div class="jii-heading">
+            <h1>Hoạt động</h1>
+            <i class="fa-solid fa-toolbox"></i>
+          </div>
+          <!-- Nội dung hoạt động -->
+        </div>
+      </div>
+
+      <!-- Sở thích -->
+      <div class="col job-info-item-2 order-3 order-lg-4 order-md-6 pb-3">
+        <div class="job-info-item h-100">
+          <div class="jii-heading">
+            <h1>Sở thích</h1>
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+          <!-- Nội dung sở thích -->
+        </div>
+      </div>
+
+      <!-- Ngôn ngữ -->
+      <div class="col job-info-item-2 order-4 order-lg-5 order-md-5 pb-3">
+        <div class="job-info-item h-100">
+          <div class="jii-heading">
+            <h1>Ngôn ngữ</h1>
+            <i class="fa-solid fa-microphone"></i>
+          </div>
+          <!-- Nội dung ngôn ngữ -->
+        </div>
+      </div>
+
+      <!-- Kỹ năng -->
+      <div class="col job-info-item-2 order-5 order-lg-6 order-md-3 pb-3">
+        <div class="job-info-item h-100">
+          <div class="jii-heading">
+            <h1>Kỹ năng</h1>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <!-- Nội dung kỹ năng -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
