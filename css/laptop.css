@@ -235,11 +235,12 @@
   }
 
   #job-info .job-info-item-1 {
-    height: 636px;
+    /* height: 636px; */
   }
 
   #job-info .job-info-item-2 {
-    height: 454px;
+    /* height: 454px; */
+    height: 354px;
   }
 
   .job-info-item .jii-heading {
@@ -370,7 +371,7 @@
   #certificate .container {
     padding: 0;
     margin: 0 auto;
-    min-height: 510px;
+    /* min-height: 510px; */
     max-width: 1190px;
   }
 
@@ -522,10 +523,20 @@
     opacity: var(--text-opacity);
   }
 
-  /* =============================================================== More */
-  .space-page {
-    height: 68px;
+  #footer::after {
+    content: "© 2024 Quyet's Website";
+    display: block;
+    text-align: center;
+    opacity: var(--text-opacity);
+    font-weight: bold;
+    background-color: #fff;
+    padding: 0.2rem;
   }
+
+  /* =============================================================== More */
+  /* .space-page {
+    height: 68px;
+  } */
 
   /* =============================================================== More2: digital-cv*/
   .row.parent {
@@ -609,7 +620,6 @@
   .section-title-2 {
     margin-left: 0;
   }
-  
 }
 @media (max-width: 991px) {
   .section-title-2 {
