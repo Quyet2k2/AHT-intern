@@ -1,0 +1,12 @@
+/* Tablet */
+@media (max-width: 991px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .user-img {
+    height: 1.5rem;
+  }
+  .main-state {
+    gap: 2rem;
+  }
+}

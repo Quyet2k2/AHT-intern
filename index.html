@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="../_material/fontawesome-free-6.6.0-web/css/all.css"
+    /> -->
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="../_material/bootstrap-5.3.3-dist/css/bootstrap.css"
+    /> -->
+    <!-- css -->
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+
+    <title>Bài tập 1</title>
+  </head>
+  <body>
+    <header class="">
+      <nav class="header-nav">
+        <div class="sidebar-icon"><i class="fa-solid fa-bars"></i></div>
+        <div class="user-container">
+          <img src="./user-img.png" alt="" class="user-img" />
+        </div>
+        <div class="right-header">
+          <div class="right-top-header">
+            <p class="user-name">TRE TNG</p>
+            <div class="search-container">
+              <form action="/search" method="get">
+                <div class="">
+                  <i class="fas fa-search"></i>
+                  <input
+                    type="text"
+                    name="query"
+                    placeholder="Tìm kiếm công việc..."
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="navigation">
+            <ul class="">
+              <li class="text-center">
+                <a href="#">Công việc</a>
+              </li>
+              <li class="staff-nav js-staff text-center">
+                <a href="#">Nhân viên của tôi</a>
+                <i
+                  class="js-staff-icon fa-solid fa-caret-down"
+                  aria-hidden="true"
+                ></i>
+                <ul class="js-staff-list staff-list hidden">
+                  <li><p>1</p></li>
+                  <li><p>2</p></li>
+                  <li><p>3</p></li>
+                </ul>
+              </li>
+              <li class="fillter-nav js-fillter text-center">
+                <a href="#">Bộ lọc tùy chỉnh</a>
+                <i
+                  class="js-fillter-icon fa-solid fa-caret-down"
+                  aria-hidden="true"
+                ></i>
+                <ul class="js-fillter-list fillter-list hidden">
+                  <li><p>11</p></li>
+                  <li><p>22</p></li>
+                  <li><p>33</p></li>
+                </ul>
+              </li>
+              <li class="text-center">
+                <a href="#">Đang theo dõi</a>
+              </li>
+              <li class="text-center">
+                <a href="#">Lịch biểu</a>
+              </li>
+              <li class="text-center">
+                <a href="#">Cv lặp lại</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main container-fluid">
+      <div class="main-nav">
+        <div class="js-new-job new-job">
+          <i class="new-job-icon fa-solid fa-circle-plus"></i>
+          <p>Tạo công việc mới</p>
+        </div>
+
+        <div class="main-state">
+          <div class="js-job job">
+            <p>
+              Giao & được giao
+              <i
+                class="js-job-icon fa-solid fa-caret-down"
+                aria-hidden="true"
+              ></i>
+            </p>
+            <ul class="js-job-list bg-light shadow hidden">
+              <li class="py-2">
+                <strong class="text-black">Giao & được giao</strong>
+              </li>
+              <li><p>CV được giao</p></li>
+              <li><p>CV giao đi</p></li>
+              <li
+                class="border-top d-flex justify-content-between align-items-center"
+              >
+                <strong class="text-black">Công việc & công việc con</strong>
+                <i class="fa-solid fa-chevron-down text-black"></i>
+                <ul class="">
+                  <li><p>1</p></li>
+                  <li><p>1</p></li>
+                  <li><p>1</p></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="js-state state">
+            <p>
+              Tất cả trạng thái
+              <i
+                class="js-state-icon fa-solid fa-caret-down"
+                aria-hidden="true"
+              ></i>
+            </p>
+            <ul class="js-state-list hidden">
+              <li><p>111</p></li>
+              <li><p>222</p></li>
+              <li><p>333</p></li>
+            </ul>
+          </div>
+          <div class="js-project project">
+            <p>
+              Tất cả dự án
+              <i
+                class="js-project-icon fa-solid fa-caret-down"
+                aria-hidden="true"
+              ></i>
+            </p>
+            <ul class="js-project-list hidden">
+              <li><p>111</p></li>
+              <li><p>222</p></li>
+              <li><p>333</p></li>
+            </ul>
+          </div>
+          <div class="js-update-time update-time">
+            <p>
+              Thời gian cập nhật
+              <i
+                class="js-update-time-icon fa-solid fa-caret-down"
+                aria-hidden="true"
+              ></i>
+            </p>
+            <ul class="js-update-time-list hidden">
+              <li><p>111</p></li>
+              <li><p>222</p></li>
+              <li><p>333</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content js-main-content">
+        <!-- <div
+          class="d-flex w-100 align-content-center justify-content-center py-2"
+        >
+          <button type="button" class="btn btn-danger js-reset-data-btn">
+            reset model data
+          </button>
+        </div> -->
+        <!-- <div class="week">
+          <div class="week-heading">
+            <p
+              class="js-week-time border-bottom border-2 opacity-75 pb-1 pt-3 text-uppercase"
+            >
+              Tuần 15/07 - 21/07/24
+            </p>
+          </div>
+          <div class="week-content">
+            <div class="week-item">
+              <div class="week-item-right-content">
+                <input type="radio" class="js-job-check job-check" />
+                <div class="week-item-main-content">
+                  <div class="week-item-main-top-content">
+                    <p class="fw-bold fs-6">Họp tiến độ triển khai dự án</p>
+                  </div>
+                  <div class="week-item-main-bottom-content">
+                    <span>Công việc của TNG</span>
+                    <span class="opacity-50 fw-bold">Tạo bởi @TRETNG</span>
+                  </div>
+                </div>
+              </div>
+              <div class="week-item-left-content">
+                <div class="week-item-left-top-content">
+                  <span class="d-inline-block">27/01/2024</span>
+                  <span class="d-inline-block">
+                    <img src="./user-img.png" alt="" class="owner-img" />
+                    TNG
+                  </span>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="week-item-left-bottom-content">
+                  <i class="fa-solid fa-square-pen"></i
+                  ><i class="fa-regular fa-calendar-days"></i
+                  ><i class="fa-solid fa-circle-play"></i
+                  ><i class="fa-solid fa-circle-exclamation"></i
+                  ><i class="fa-solid fa-bookmark"></i
+                  ><i class="fa-solid fa-bell"></i
+                  ><i class="fa-regular fa-trash-can"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </main>
+  </body>
+  <!-- bootstrap script -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+  <!-- <script src="../_material/bootstrap-5.3.3-dist/js/bootstrap.js"></script> -->
+
+  <!-- custom script -->
+  <!-- <script type="module" src="./js/script.js"></script>-->
+  <script type="module" src="./script.js"></script>
+</html>
